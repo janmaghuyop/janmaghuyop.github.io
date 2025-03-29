@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jan Maghuyop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .profile-container {
+            text-align: center;
+        }
+        .profile-container img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .header {
+              margin-top: 30px;
+              font-size: 30px;
+              color: #333;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+        }
+        .social-links a:hover {
+            color: #0073e6;
+        }
+        .footer {
+            margin-top: 30px;
+        }
+        .footer p {
+            color: #333;
+            font-size: 12px;
+         }
+        .footer a {
+            color: #333;
+            font-size: 12px;
+         }
+        .footer a {
+            text-decoration: none;
+        }
+        #time {
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<script>
+    function updateTime() {
+        const options = {
+            timeZone: 'Asia/Manila',
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: true
+        };
+        const currentTime = new Date().toLocaleString('en-US', options);
+        document.getElementById('time').textContent = currentTime + " (UTC+8) PHT";
+    }
+    window.onload = updateTime;
+    setInterval(updateTime, 60000);
+</script>
+<body>
+    <div class="profile-container">
+        <img src="selfie.webp" alt="Profile Picture"></img>
+        <div class="header">
+            <p>Jan Maghuyop . DevOps . Developer . Support . Consultant </p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/janmaghuyop/" target="_blank">Linkedin</a>
+            <a href="https://www.upwork.com/freelancers/~01d40ed7aed9d24636" target="_blank">Upwork</a>
+            <a href="https://github.com/janmaghuyop" target="_blank">Github</a>
+            <a href="https://www.facebook.com/jeemaghuyop/" target="_blank">Facebook</a>
+        </div>
+        <div class="footer">
+            <p><span id="time"></span><a href="mailto:jan.maghuyop.ph@gmail.com">jan.maghuyop.ph@gmail.com</a><p>
+        </div>
+    </div>
+</body>
+</html>
