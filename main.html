@@ -24,15 +24,27 @@
             height: 150px;
         }
         .header {
-              margin-top: 30px;
-              font-size: 30px;
-              color: #333;
+            margin-top: 30px;
+            font-size: 30px;
+            color: #333;
         }
         #header span {
-              display: inline-block;
-              padding-left: 12px;
-              padding-right: 12px;
+            display: inline-block;
+            padding-left: 12px;
+            padding-right: 12px;
         }
+        .services {
+            margin-top: 20px;
+            color: #333;
+            padding: 0px;
+        }
+        .services p {
+            margin: 0;
+            display: inline-block;
+            padding-left: 12px;
+            padding-right: 12px;
+            font-size: 15px;
+         }
         .social-links {
             margin-top: 20px;
         }
@@ -47,7 +59,7 @@
             color: #0073e6;
         }
         .footer {
-            margin-top: 30px;
+            margin-top: 20px;
         }
         .footer p {
             color: #333;
@@ -93,13 +105,19 @@
             <a href="https://www.facebook.com/jeemaghuyop/" target="_blank">Facebook</a>
             <a onclick="clickDonate()">Donate</a>
         </div>
+        <div class="services">
+            <p>DevOps</p>
+            <p>Web Development</p>
+            <p>Support</p>
+            <p>IT Consulting</p>
+        </div>
         <div class="footer">
             <p id="Footer"><p>
         </div>
     </div>
 </body>
 <script>
-    let headerHTML = '<span>Jan Maghuyop</span><span>DevOps</span><span>Developer</span><span>Support</span><span>Consultant</span>';
+    let headerHTML = '<span>Jan Maghuyop</span>';
     let header = document.getElementById('header')
 
     let footerHTML = '<span id="time"></span><span><a href="mailto:jan.maghuyop.ph@gmail.com">jan.maghuyop.ph@gmail.com</a></span>'
