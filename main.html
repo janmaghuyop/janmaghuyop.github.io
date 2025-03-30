@@ -57,9 +57,42 @@
         #time {
             margin-right: 15px;
         }
+        a:not([href]) {
+            cursor: pointer;
+        }
     </style>
 </head>
+<body>
+    <div class="profile-container">
+        <img src="selfie.webp" alt="Profile Picture"></img>
+        <div class="header">
+            <p id="header"></p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/janmaghuyop/" target="_blank">Linkedin</a>
+            <a href="https://www.upwork.com/freelancers/~01d40ed7aed9d24636" target="_blank">Upwork</a>
+            <a href="https://github.com/janmaghuyop" target="_blank">Github</a>
+            <a href="https://www.facebook.com/jeemaghuyop/" target="_blank">Facebook</a>
+            <a onclick="clickDonate()">Donate</a>
+        </div>
+        <div class="footer">
+            <p id="Footer"><p>
+        </div>
+    </div>
+</body>
 <script>
+    let headerTxt = 'Jan Maghuyop . DevOps . Developer . Support . Consultant';
+    let header = document.getElementById('header')
+
+    let footerHTML = '<span id="time"></span><a href="mailto:jan.maghuyop.ph@gmail.com">jan.maghuyop.ph@gmail.com</a>'
+    let footer = document.getElementById('Footer')
+
+    function setHeaderFooter() {
+        header.innerText = headerTxt;
+        footer.innerHTML = footerHTML;
+    }
+    setHeaderFooter();
+
     function updateTime() {
         const options = {
             timeZone: 'Asia/Manila',
@@ -75,31 +108,16 @@
 
     const btcAddr = "bc1qgzlu9t5ku578ksfq3vldp7rlml3vaqcyd5at3x";
 
-    function changeHeader() {
-        document.getElementById("header").innerHTML = "Thank you!";
-        document.querySelector(".footer p").innerHTML = '<span style="margin-right: 20px;">BTC</span> ' + btcAddr + ' <a href="" onclick="copyBTC()" title="Copy to clipboard!" style="margin-left: 20px;">COPY</a>';
+    function clickDonate() {
+        header.innerHTML = "Thank you!";
+        footer.innerHTML = '<span style="margin-right: 20px;">BTC</span> ' + btcAddr + ' <a onclick="copyBTC()" title="Copy to clipboard!" style="margin-left: 20px;">COPY</a>';
     }
+
     function copyBTC() {
         navigator.clipboard.writeText(btcAddr);
         alert("Bitcoin address copied to clipboard: " + btcAddr);
+        setHeaderFooter();
+        updateTime();
     }
 </script>
-<body>
-    <div class="profile-container">
-        <img src="selfie.webp" alt="Profile Picture"></img>
-        <div class="header">
-            <p id="header">Jan Maghuyop . DevOps . Developer . Support . Consultant </p>
-        </div>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/janmaghuyop/" target="_blank">Linkedin</a>
-            <a href="https://www.upwork.com/freelancers/~01d40ed7aed9d24636" target="_blank">Upwork</a>
-            <a href="https://github.com/janmaghuyop" target="_blank">Github</a>
-            <a href="https://www.facebook.com/jeemaghuyop/" target="_blank">Facebook</a>
-            <a href="#donate" onclick="changeHeader()">Donate</a>
-        </div>
-        <div class="footer">
-            <p><span id="time"></span><a href="mailto:jan.maghuyop.ph@gmail.com">jan.maghuyop.ph@gmail.com</a><p>
-        </div>
-    </div>
-</body>
 </html>
