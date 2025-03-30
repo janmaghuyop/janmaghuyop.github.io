@@ -28,6 +28,11 @@
               font-size: 30px;
               color: #333;
         }
+        #header span {
+              display: inline-block;
+              padding-left: 12px;
+              padding-right: 12px;
+        }
         .social-links {
             margin-top: 20px;
         }
@@ -54,11 +59,23 @@
         .footer a {
             text-decoration: none;
         }
-        #time {
-            margin-right: 15px;
+        #Footer span {
+            padding-left: 6px;
+            padding-right: 6px;
         }
         a:not([href]) {
             cursor: pointer;
+        }
+        @media (min-width: 300px) {
+            .profile-container {
+                padding: 20px;
+            }
+        }
+        @media (max-width: 350px) {
+            #Footer span {
+                display: block;
+                margin-bottom: 5px;
+            }
         }
     </style>
 </head>
@@ -81,14 +98,14 @@
     </div>
 </body>
 <script>
-    let headerTxt = 'Jan Maghuyop . DevOps . Developer . Support . Consultant';
+    let headerHTML = '<span>Jan Maghuyop</span><span>DevOps</span><span>Developer</span><span>Support</span><span>Consultant</span>';
     let header = document.getElementById('header')
 
-    let footerHTML = '<span id="time"></span><a href="mailto:jan.maghuyop.ph@gmail.com">jan.maghuyop.ph@gmail.com</a>'
+    let footerHTML = '<span id="time"></span><span><a href="mailto:jan.maghuyop.ph@gmail.com">jan.maghuyop.ph@gmail.com</a></span>'
     let footer = document.getElementById('Footer')
 
     function setHeaderFooter() {
-        header.innerText = headerTxt;
+        header.innerHTML = headerHTML;
         footer.innerHTML = footerHTML;
     }
     setHeaderFooter();
@@ -110,7 +127,7 @@
 
     function clickDonate() {
         header.innerHTML = "Thank you!";
-        footer.innerHTML = '<span style="margin-right: 20px;">BTC</span> ' + btcAddr + ' <a onclick="copyBTC()" title="Copy to clipboard!" style="margin-left: 20px;">COPY</a>';
+        footer.innerHTML = '<span>BTC</span><span>' + btcAddr + '</span><span><a onclick="copyBTC()" title="Copy to clipboard!">COPY</a></span>';
     }
 
     function copyBTC() {
