@@ -1,0 +1,51 @@
+Jan Maghuyop
+============
+
+#### DevOps Engineer focused on engineering productivity.
+###### [janmaghuyop.github.io](https://janmaghuyop.github.io/) . jan.maghuyop.ph@gmail.com
+
+Experience
+----------
+**Principal DevOps Engineer, Photobook Worldwide** (2024-present)
+- Infrastructure as a code via Terraform and ArgoCD.
+- Converted production workloads to use ARM instances to reduce cost.
+- Reduced pipeline tests from 15> mins to 8~ mins.
+
+**Senior DevOps Engineer, Photobook Worldwide** (2023-2024)
+- Reduced cloud provider cost by 25%.
+- Reduced pipeline tests from 30> mins to 15> mins.
+
+**DevOps Engineer, Photobook Worldwide** (2022-2023)
+- Reduced pipeline tests from 2> hours to 30> mins.
+- Upgraded RDS 10.2 to 10.6 with 5s> downtime, no AWS blue green deployment at that time.
+- Reduced cloud provider cost and eliminated extra resources.
+
+**DevOps Engineer, Zorgdomein / Caresharing** (2018-2024)
+- Infrastructure as a code using terraform.
+- Provisioned kubernetes clusters in GCP.
+- Upgraded Gitlab from 12.9.2 to 15.0.0+
+- Converted rails based apps to docker images for kubernetes.
+
+**Software Engineer, Caresharing** (2016-2018)
+- Developed and maintained features on a data intensive application (600M+) datapoints.
+- Spearheaded docker development environment in the company.
+- Assigned on investigative tasks for bug discovery and fix.
+
+Education
+---------
+**B.S. in Computer Science, Holy Name University** (2012-2016)
+
+Stack
+-----
+Kubernetes, ArgoCD, Terraform, Bash, Ruby, Python, Jenkins, Git, Linux, AWS, GCP, OCI.
+
+Projects
+--------
+**Cyber Security, Teaching Assistant** (2017-2018)
+- Provided POCs about cyber security and penetration testing.
+- Accomplished exercises about network reconnaissance, service enumeration, exploitation, vulnerability, mitigation, forensics, network perimeter defense, cryptography, server hardening and wireless hacking.
+- Teaching aide and mentorship about cyber security.
+
+**Carbon Emission Visualization using ELK Stack** (2017)
+- Implemented project about aggregation of data from 3 servers that has carbon emission levels, GPS coordinates of sensors and altitude.
+- Computation of derived value from the acquired data using python and visualizing data using elasticsearch and kibana.
