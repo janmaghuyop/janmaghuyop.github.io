@@ -2,7 +2,7 @@ Jan Maghuyop
 ============
 
 #### DevOps Engineer focused on engineering productivity.
-###### [janmaghuyop.github.io](https://janmaghuyop.github.io/) . jan.maghuyop.ph@gmail.com
+###### [ [janmaghuyop.github.io](https://janmaghuyop.github.io/) ] . [ jan.maghuyop.ph@gmail.com ]
 
 Experience
 ----------
@@ -34,6 +34,7 @@ Experience
 Education
 ---------
 **B.S. in Computer Science, Holy Name University** (2012-2016)
+- Thesis: Traffic Congestion Notification using Fuzzy Logic
 
 Stack
 -----
@@ -47,5 +48,5 @@ Projects
 - Teaching aide and mentorship about cyber security.
 
 **Carbon Emission Visualization using ELK Stack** (2017)
-- Implemented project about aggregation of data from 3 servers that has carbon emission levels, GPS coordinates of sensors and altitude.
+- Aggregation of data from 3 servers that has carbon emission levels, GPS coordinates of sensors and altitude.
 - Computation of derived value from the acquired data using python and visualizing data using elasticsearch and kibana.
